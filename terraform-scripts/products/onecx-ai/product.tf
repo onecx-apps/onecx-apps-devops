@@ -16,12 +16,12 @@ module "onecx-ai" {
 }
 
 # ONEC-AI-SVC
-module "onecx-ai-svc" {
-  source = "../../modules/quarkus"
-  repository_name        = "onecx-ai-svc"
-  repository_description = "OneCx AI Management Service"
-  team_id                = module.onecx-ai-team.team_id
-}
+#module "onecx-ai-svc" {
+#  source = "../../modules/quarkus"
+#  repository_name        = "onecx-ai-svc"
+#  repository_description = "OneCx AI Management Service"
+#  team_id                = module.onecx-ai-team.team_id
+#}
 
 # ONECX-AI-BFF
 module "onecx-ai-bff" {
