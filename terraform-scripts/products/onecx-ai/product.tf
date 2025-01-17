@@ -38,11 +38,3 @@ module "onecx-ai-ui" {
   repository_description = "OneCx AI Management UI"
   team_id                = module.onecx-ai-team.team_id
 }
-
-# ONEC-EXAMPLE-SVC
-module "onecx-example-svc" {
-  source = "../../modules/quarkus"
-  repository_name        = "onecx-example-svc"
-  repository_description = "OneCx Example Service"
-  team_id                = module.onecx-ai-team.team_id
-}
