@@ -46,7 +46,7 @@ jobs:
     - name: Terraform Init
       id: init
       # if: steps.check_files.outputs.files_exists != 'true'
-      run: terraform init -reconfigure
+      run: terraform init
 
     - name: Terraform Validate
       id: validate
