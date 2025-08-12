@@ -52,12 +52,6 @@ jobs:
       id: validate
       run: terraform validate -no-color
 
-    - name: Remove all orphaned resources from state
-      id: remove_orphaned_resources
-      run: |
-          terraform state rm 'module.onecx-ai.module.onecx-ai-bff.module.sonarcloud.sonarcloud_project.project'
-          terraform state rm 'module.onecx-ai.module.onecx-ai-bff.module.sonarcloud.sonarcloud_project_main_branch.branch'
-
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       id: plan
