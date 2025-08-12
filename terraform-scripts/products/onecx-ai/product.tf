@@ -6,6 +6,15 @@ module "onecx-ai-team" {
   team_members_file_path   = "products/onecx-ai/team.csv"
 }
 
+# ONECX-AI
+module "onecx-ai" {
+  source = "../../modules/product"
+  repository_name        = "onecx-ai"
+  repository_description = "OneCx AI Management"
+  team_id                = module.onecx-ai-team.team_id
+  team_name              = module.onecx-ai-team.team_name
+}
+
 # ONECX-AI-MANAGEMENT
 module "onecx-ai-management" {
   source = "../../modules/product"
