@@ -6,7 +6,7 @@ module "onecx-ai-team" {
   team_members_file_path   = "products/onecx-ai/team.csv"
 }
 
-# ONECX-AI-MANAGEMENT
+# ONECX-AI-MANAGEMENT Product
 module "onecx-ai-management" {
   source = "../../modules/product"
   repository_name        = "onecx-ai-management"
