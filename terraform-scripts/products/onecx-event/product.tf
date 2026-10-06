@@ -17,25 +17,25 @@ module "onecx-event" {
 }
 
 ## ONECX-EVENT-SVC
-#module "onecx-event-svc" {
-#  source = "../../modules/quarkus"
-#  repository_name        = "onecx-event-svc"
-#  repository_description = "OneCx Event Management Service"
-#  team_id                = module.onecx-event-team.team_id
-#}
-#
+module "onecx-event-svc" {
+  source = "../../modules/quarkus"
+  repository_name        = "onecx-event-svc"
+  repository_description = "OneCx Event Management Service"
+  team_id                = module.onecx-event-team.team_id
+}
+
 ## ONECX-EVENT-BFF
-#module "onecx-event-bff" {
-#  source = "../../modules/quarkus"
-#  repository_name        = "onecx-event-bff"
-#  repository_description = "OneCx Event Management BFF"
-#  team_id                = module.onecx-event-team.team_id
-#}
-#
+module "onecx-event-bff" {
+  source = "../../modules/quarkus"
+  repository_name        = "onecx-event-bff"
+  repository_description = "OneCx Event Management BFF"
+  team_id                = module.onecx-event-team.team_id
+}
+
 ## ONECX-EVENT-UI
-#module "onecx-event-ui" {
-#  source = "../../modules/angular"
-#  repository_name        = "onecx-event-ui"
-#  repository_description = "OneCx Event Management UI"
-#  team_id                = module.onecx-event-team.team_id
-#}
+module "onecx-event-ui" {
+  source = "../../modules/angular"
+  repository_name        = "onecx-event-ui"
+  repository_description = "OneCx Event Management UI"
+  team_id                = module.onecx-event-team.team_id
+}
